@@ -1,0 +1,6 @@
+target/
+Applets/
+ReaderFiles/
+.idea/
+*.iml
+*.txt
