@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class ExpressionEvaluatorTest {
+class PostFixBuilderTest {
 
-  private ExpressionEvaluator evaluator;
+  private PostFixBuilder evaluator;
   private String expectedPostFix;
 
-  private static void setInfixExpression(ExpressionEvaluator evaluator, String infixValue) {
+  private static void setInfixExpression(PostFixBuilder evaluator, String infixValue) {
     int i = -1;
     int infixLength = infixValue.length() - 1;
     while (i < infixLength) {
@@ -19,7 +19,7 @@ class ExpressionEvaluatorTest {
 
   @BeforeEach
   void setUp() {
-    evaluator = new ExpressionEvaluator(15);
+    evaluator = new PostFixBuilder(15);
   }
 
   @Test

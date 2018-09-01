@@ -1,6 +1,6 @@
 package array.storage;
 
-public class ExpressionEvaluator {
+public class PostFixBuilder {
 
   private char[] stack;
   private int size;
@@ -8,13 +8,13 @@ public class ExpressionEvaluator {
   private String operands = "/*+-";
   private int elementCount = -1;
 
-  public ExpressionEvaluator(int size) {
+  public PostFixBuilder(int size) {
     stack = new char[size];
     this.size = size;
     sb = new StringBuilder();
   }
 
-  private ExpressionEvaluator() {
+  private PostFixBuilder() {
   }
 
 
